@@ -5,10 +5,11 @@ on:
     types: 
       - completed
 jobs:
-  runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-  steps:
-    - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-    - name: Test 
-      run: echo IM RUNNING NOW
+      - name: Test 
+        run: echo IM RUNNING NOW
