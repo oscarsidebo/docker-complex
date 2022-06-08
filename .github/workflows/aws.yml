@@ -1,9 +1,7 @@
 name: Aws
 on: 
-  workflow_run: 
-    workflows: ["Docker Flow"] 
-    types: 
-      - completed
+  push: 
+    branches: [ master ] 
 jobs:
   build:
     runs-on: ubuntu-latest
