@@ -1,0 +1,14 @@
+name: Aws
+on: 
+  workflow_run: 
+    workflows: ["Docker Flow"] 
+    types: 
+      - completed
+jobs:
+  runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v3
+
+    - name: Test 
+      run: echo IM RUNNING NOW
